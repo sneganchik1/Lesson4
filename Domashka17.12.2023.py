@@ -1,10 +1,10 @@
 
 #HW 10. задача 3
 #Создайте пользовательскую функцию, принимающую произвольное количество аргументов и выводящую их затем на экран. Для вывода элементов полученного списка используйте цикл for. Вызовите функцию, передав ей в качестве значений целое число, вещественное число, строку и пустой список
-# def funct (*lst):
-#     for x in lst:
-#         print(x)
-# funct('2', '2.5', ('a', 'b', 'c'), [])
+def funct (*lst):
+    for x in lst:
+        print(x)
+funct('2', '2.5', ('a', 'b', 'c'), [])
 
 
 
@@ -16,21 +16,21 @@
 # Получим, например, следующее сообщение: «Переданы аргументы: var1 = 2, var3 = 10».
 
 
-#
-# def three_args(var1 = None, var2 = None, var3 = None):
-#     if (var1 != None and var2 != None and var3 != None):
-#         print(f'Переданы аргументы: var1 = {var1}, var2 = {var2}, var3 = {var3}')
-#     elif (var1 != None and var2 != None and var3 == None):
-#         print(f'Переданы аргументы: var1 = {var1}, var2 = {var2}')
-#     elif (var1 != None and var2 == None and var3 != None):
-#         print(f'Переданы аргументы: var1 = {var1}, var3 = {var3}')
-#     elif (var1 == None and var2 != None and var3 != None):
-#         print(f'Переданы аргументы: var2 = {var2}, var3 = {var3}')
-#     else:
-#        print('Введите хотя бы 2 аргумента')
-#
-#
-# three_args(var1 = 2, var2 = 'a', var3 = 10)
+
+def three_args(var1 = None, var2 = None, var3 = None):
+    if (var1 != None and var2 != None and var3 != None):
+        print(f'Переданы аргументы: var1 = {var1}, var2 = {var2}, var3 = {var3}')
+    elif (var1 != None and var2 != None and var3 == None):
+        print(f'Переданы аргументы: var1 = {var1}, var2 = {var2}')
+    elif (var1 != None and var2 == None and var3 != None):
+        print(f'Переданы аргументы: var1 = {var1}, var3 = {var3}')
+    elif (var1 == None and var2 != None and var3 != None):
+        print(f'Переданы аргументы: var2 = {var2}, var3 = {var3}')
+    else:
+       print('Введите хотя бы 2 аргумента')
+
+
+three_args(var1 = 2, var2 = 'a', var3 = 10)
 
 
 # HW 8. Sum_range
