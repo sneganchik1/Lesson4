@@ -1,4 +1,4 @@
-import factorial
+from libr.factorial import factorial
 import datetime
 
 """
@@ -7,20 +7,22 @@ import datetime
 def time_func(func):
     def wrapper(*args, **kwargs):
         start_time = datetime.datetime.now()
-        result = func(*args, **kwargs)
+        print(f'start time  {start_time}')
+        res = func(*args, **kwargs)
         end_time = datetime.datetime.now()
-        result = func(*args, **kwargs)
+        print(f'end time  {end_time}')
+
         delta = end_time - start_time
         print(f' время выполнения расчетов {delta}')
-        return result
+        return res
 
     return wrapper
 
 @time_func
-def find_fact(n):
-    return factorial.factorial(n)
+def fact_dec(n):
+    return factorial(n)
 
-result = find_fact(5)
-print(f'результат факториала составляет {result}')
+# print(factorial(5))
+print(fact_dec(50))
 
 
